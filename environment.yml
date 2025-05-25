@@ -1,21 +1,29 @@
 name: WAAK
 channels:
   - pytorch
-  - nvidia
-  - conda-forge
+  - conda-forge # Higher priority for general packages
+  - nvidia      # For CUDA specific builds if needed
   - defaults
 dependencies:
   - python=3.10
   - pip
+  # Core data science and utilities
   - numpy
+  - pandas
   - scipy
-  - mido
   - scikit-learn
+  # Jupyter and interactivity
+  - ipython
+  - ipywidgets # Moved from pip for better conda integration
+  - tqdm
+  # Audio and MIDI processing - Conda preferred if available
+  - mido
+  - librosa
+  # PyTorch ecosystem
   - pytorch
   - torchaudio
   - torchvision
-  - librosa
-  - ipython
+  # Packages to be installed via Pip (if not on preferred conda channels or specific versions needed)
   - pip:
     - pretty_midi
     - symusic
