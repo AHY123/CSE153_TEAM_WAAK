@@ -1,0 +1,23 @@
+name: WAAK
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - scipy
+  - mido
+  - scikit-learn
+  - pytorch
+  - torchaudio
+  - torchvision
+  - librosa
+  - ipython
+  - pip:
+    - symusic
+    - midiutil
+    - miditok
+    - midi2audio
