@@ -17,6 +17,7 @@ dependencies:
   - librosa
   - ipython
   - pip:
+    - pretty_midi
     - symusic
     - midiutil
     - miditok
