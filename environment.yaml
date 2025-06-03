@@ -1,4 +1,4 @@
-name: base
+name: cnm
 channels:
   - conda-forge
   - defaults
